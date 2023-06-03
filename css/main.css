@@ -85,6 +85,10 @@
   width: 90%;
   position: relative;
   gap: 25px;
+  font-weight: 700;
+}
+.steps__list:hover > i {
+  color: #9356DC;
 }
 .steps__number {
   color: #ffffff;
@@ -94,4 +98,7 @@
   width: 15px;
   position: absolute;
   left: -16px;
+}
+.steps__icon {
+  color: #7E7E7E;
 }

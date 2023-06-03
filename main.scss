@@ -7,6 +7,8 @@ $dark-grey: #d2d2d2;
 $light-grey: #eaeaea;
 $white: #ffffff;
 $middle-grey: #F6F6F6;
+$icon-grey: #7E7E7E;
+$hover-purple: #9356DC;
 
 //**************MIXIN**************//
 
@@ -114,7 +116,12 @@ $middle-grey: #F6F6F6;
         width: 90%;
         position: relative;
         gap: 25px;
-        
+        font-weight: 700;
+
+
+        &:hover >i {
+        color: $hover-purple;
+    }
     }
 
 
@@ -129,5 +136,9 @@ $middle-grey: #F6F6F6;
     left: -16px;
     }
 
+    &__icon {
+        color: $icon-grey;
+    
+    }
 
 }
