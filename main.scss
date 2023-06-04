@@ -6,9 +6,10 @@ $tertiary-color: #99e2d0;
 $dark-grey: #d2d2d2;
 $light-grey: #eaeaea;
 $white: #ffffff;
-$middle-grey: #F6F6F6;
-$icon-grey: #7E7E7E;
-$hover-purple: #9356DC;
+$middle-grey: #f6f6f6;
+$icon-grey: #7e7e7e;
+$hover-purple: #9356dc;
+$black: #000000;
 
 //**************MIXIN**************//
 
@@ -38,8 +39,13 @@ $hover-purple: #9356DC;
   margin: 0;
   padding: 0;
   object-fit: cover;
+  //   box-sizing: border-box;
 }
 
+a {
+  color: $black;
+  text-decoration: none;
+}
 //*************** HEADER ***************//
 
 .header {
@@ -62,6 +68,7 @@ $hover-purple: #9356DC;
   @include flexcenter;
   flex-direction: column;
   background-color: $light-grey;
+  text-align: center;
 
   &__location {
     background-color: $dark-grey;
@@ -87,46 +94,41 @@ $hover-purple: #9356DC;
   }
 }
 
-
 //*************STEPS******************//
 .steps {
+  display: flex;
+  flex-direction: column;
+  height: 440px;
+
+  &__title {
+    margin: 48px 80px 26px 20px;
+  }
+
+  &__choice {
     display: flex;
     flex-direction: column;
-    height: 440px;
-    
-    &__title {
-        margin: 48px 80px 26px 20px;
+    align-items: center;
+    justify-content: space-between;
+    height: 290px;
+  }
+
+  &__list {
+    @include flexcenter;
+    background-color: $middle-grey;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
+    border-radius: 20px;
+    height: 80px;
+    width: 82%;
+    position: relative;
+    gap: 25px;
+    font-weight: 700;
+
+    &:hover > i {
+      color: $hover-purple;
     }
+  }
 
-    &__choice {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: space-between;
-        height: 290px;
-          
-    }
-
-    &__list {
-        @include flexcenter;
-        background-color: $middle-grey;
-        box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
-        border-radius: 20px;
-        height: 80px;
-        width: 90%;
-        position: relative;
-        gap: 25px;
-        font-weight: 700;
-
-
-        &:hover >i {
-        color: $hover-purple;
-    }
-    }
-
-
-
-    &__number {
+  &__number {
     color: $white;
     background-color: #9356dc;
     border-radius: 50%;
@@ -134,11 +136,77 @@ $hover-purple: #9356DC;
     width: 15px;
     position: absolute;
     left: -16px;
-    }
+  }
 
-    &__icon {
-        color: $icon-grey;
-    
-    }
+  &__icon {
+    color: $icon-grey;
+  }
+}
 
+//*************RESTAURANT************//
+
+.restaurant {
+  background: $light-grey;
+  padding: 15px;
+  padding-top: 54px;
+
+  &__cards {
+    border-radius: 15px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    margin-bottom: 60px;
+  }
+
+  &__card {
+    position: relative;
+    height: 251px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+    background-color: $white;
+  }
+  &__card img {
+    width: 100%;
+    border-radius: 15px 15px 0px 0px;
+    height: 174px;
+  }
+
+  &__title {
+    margin-bottom: 20px;
+    font-weight: 700;
+  }
+
+  &__name {
+    padding-top: 10px;
+    padding-bottom: 5px;
+    padding-left: 13px;
+  }
+
+  &__city {
+    padding-bottom: 12px;
+    padding-left: 13px;
+  }
+
+  &__heart {
+    position: absolute;
+    bottom: 27px;
+    right: 25px;
+    font-size: 25px;
+  }
+
+  &__new {
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 2px;
+    background: #99e2d0;
+    width: 80px;
+    height: 29px;
+    color: #008766;
+    @include flexcenter;
+    font-size: 14px;
+    font-weight: bold;
+    position: absolute;
+    top: 15px;
+    right: 15px;
+  }
 }

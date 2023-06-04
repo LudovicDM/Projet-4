@@ -7,6 +7,11 @@
      object-fit: cover;
 }
 
+a {
+  color: #000000;
+  text-decoration: none;
+}
+
 .header {
   display: flex;
   justify-content: center;
@@ -28,6 +33,7 @@
   align-items: center;
   flex-direction: column;
   background-color: #eaeaea;
+  text-align: center;
 }
 .intro__location {
   background-color: #d2d2d2;
@@ -78,17 +84,17 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #F6F6F6;
+  background-color: #f6f6f6;
   box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
   border-radius: 20px;
   height: 80px;
-  width: 90%;
+  width: 82%;
   position: relative;
   gap: 25px;
   font-weight: 700;
 }
 .steps__list:hover > i {
-  color: #9356DC;
+  color: #9356dc;
 }
 .steps__number {
   color: #ffffff;
@@ -100,5 +106,66 @@
   left: -16px;
 }
 .steps__icon {
-  color: #7E7E7E;
+  color: #7e7e7e;
+}
+
+.restaurant {
+  background: #eaeaea;
+  padding: 15px;
+  padding-top: 54px;
+}
+.restaurant__cards {
+  border-radius: 15px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  margin-bottom: 60px;
+}
+.restaurant__card {
+  position: relative;
+  height: 251px;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+  border-radius: 15px;
+  background-color: #ffffff;
+}
+.restaurant__card img {
+  width: 100%;
+  border-radius: 15px 15px 0px 0px;
+  height: 174px;
+}
+.restaurant__title {
+  margin-bottom: 20px;
+  font-weight: 700;
+}
+.restaurant__name {
+  padding-top: 10px;
+  padding-bottom: 5px;
+  padding-left: 13px;
+}
+.restaurant__city {
+  padding-bottom: 12px;
+  padding-left: 13px;
+}
+.restaurant__heart {
+  position: absolute;
+  bottom: 27px;
+  right: 25px;
+  font-size: 25px;
+}
+.restaurant__new {
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 2px;
+  background: #99e2d0;
+  width: 80px;
+  height: 29px;
+  color: #008766;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 14px;
+  font-weight: bold;
+  position: absolute;
+  top: 15px;
+  right: 15px;
 }
