@@ -210,3 +210,37 @@ a {
     right: 15px;
   }
 }
+
+//*****************FOOTER*****************//
+
+.foot {
+  background: #353535;
+  color: $white;
+  padding-left: 25px;
+  padding-top: 22px;
+  padding-bottom: 22px;
+
+  &__title {
+    font-family: "Shrikhand", cursive;
+    font-size: 18px;
+    font-weight: 400;
+    padding-bottom: 16px;
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+  }
+
+  &__link {
+    list-style-type: none;
+    display: flex;
+    gap: 14px;
+  }
+
+  &__icon {
+    width: 13px;
+    height: 13px;
+  }
+}

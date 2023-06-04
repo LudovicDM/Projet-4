@@ -169,3 +169,31 @@ a {
   top: 15px;
   right: 15px;
 }
+
+.foot {
+  background: #353535;
+  color: #ffffff;
+  padding-left: 25px;
+  padding-top: 22px;
+  padding-bottom: 22px;
+}
+.foot__title {
+  font-family: "Shrikhand", cursive;
+  font-size: 18px;
+  font-weight: 400;
+  padding-bottom: 16px;
+}
+.foot__list {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+}
+.foot__link {
+  list-style-type: none;
+  display: flex;
+  gap: 14px;
+}
+.foot__icon {
+  width: 13px;
+  height: 13px;
+}
