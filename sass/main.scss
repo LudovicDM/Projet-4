@@ -8,10 +8,10 @@ $light-grey: #eaeaea;
 $white: #ffffff;
 $middle-grey: #f6f6f6;
 $icon-grey: #7e7e7e;
-$hover-purple: #9356dc;
 $black: #000000;
 $green: #008766;
 $light-black: #353535;
+$fushia: #ff00ff;
 
 //**************MIXIN**************//
 
@@ -133,13 +133,13 @@ a {
     font-weight: 700;
 
     &:hover > i {
-      color: $hover-purple;
+      color: $primary-color;
     }
   }
 
   &__number {
     color: $white;
-    background-color: $hover-purple;
+    background-color: $primary-color;
     border-radius: 50%;
     padding: 5px 4px 5px 10px;
     width: 15px;
@@ -158,6 +158,8 @@ a {
   background: $light-grey;
   padding: 15px;
   padding-top: 54px;
+  
+  
 
   &__cards {
     border-radius: 15px;
@@ -199,11 +201,27 @@ a {
     padding-left: 13px;
   }
 
-  &__heart {
+  &__heartempty {
     position: absolute;
     bottom: 27px;
     right: 25px;
     font-size: 25px;
+    
+  }
+
+  &__heartfull {
+    position: absolute;
+    bottom: 27px;
+    right: 25px;
+    font-size: 25px;
+    opacity: 0;
+    transition-property: all;
+    transition-duration: 250ms;
+
+    &:hover{
+      opacity: 1;
+      color: $fushia;
+    }
   }
 
   &__new {

@@ -152,11 +152,24 @@ a {
   padding-bottom: 12px;
   padding-left: 13px;
 }
-.restaurant__heart {
+.restaurant__heartempty {
   position: absolute;
   bottom: 27px;
   right: 25px;
   font-size: 25px;
+}
+.restaurant__heartfull {
+  position: absolute;
+  bottom: 27px;
+  right: 25px;
+  font-size: 25px;
+  opacity: 0;
+  transition-property: all;
+  transition-duration: 250ms;
+}
+.restaurant__heartfull:hover {
+  opacity: 1;
+  color: #ff00ff;
 }
 .restaurant__new {
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.15);
