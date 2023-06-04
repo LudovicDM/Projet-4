@@ -44,7 +44,7 @@ main {
 .menu {
   background: #f6f6f6;
   border-radius: 40px 40px 0px 0px;
-  height: 1200px;
+  height: 1001px;
   position: relative;
   top: -45px;
 }
@@ -67,7 +67,7 @@ main {
   font-weight: 300;
   padding-top: 40px;
   padding-left: 13px;
-  border-bottom: 3px solid #99E2D0;
+  border-bottom: 3px solid #99e2d0;
 }
 .dish__list {
   list-style: none;
@@ -100,6 +100,23 @@ main {
   position: absolute;
   right: 20px;
   bottom: 20px;
+}
+
+.button {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 40px;
+}
+.button__command {
+  width: 218px;
+  height: 50px;
+  border-radius: 25px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+  background: linear-gradient(360deg, #9356dc 0%, #ff79da 100%);
+  border: none;
+  color: #ffffff;
+  font-size: 16px;
+  cursor: pointer;
 }
 
 .foot {
