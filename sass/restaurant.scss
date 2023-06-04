@@ -95,7 +95,7 @@ main {
 .menu {
   background: $middle-grey;
   border-radius: 40px 40px 0px 0px;
-  height: 1088px;
+  height: 1110px;
   position: relative;
   top: -45px;
 
@@ -116,13 +116,19 @@ main {
   gap: 12px;
   position: relative;
 
+  &__line {
+    border: 2px solid #99E2D0;
+    width: 40px;
+    margin-left: 13px;
+  
+  }
+
   &__title {
     font-size: 16px;
     font-weight: 300;
     padding-top: 40px;
     padding-left: 13px;
-    padding-bottom: 5px;
-    border-bottom: 3px solid #99e2d0;
+    
   }
 
   &__list {
