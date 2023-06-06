@@ -12,6 +12,12 @@ a {
   text-decoration: none;
 }
 
+.fa-circle-check {
+  position: absolute;
+  right: 86px;
+  bottom: 20px;
+}
+
 .header {
   display: flex;
   justify-content: center;
@@ -62,7 +68,7 @@ main {
   gap: 12px;
   position: relative;
 }
-.dish__btn {
+.dish__check {
   border: 0;
   position: absolute;
   top: 0px;
@@ -103,13 +109,8 @@ main {
   font-weight: 700;
   overflow: hidden;
 }
-.dish__choice:hover {
+.dish__choice:hover div {
   cursor: pointer;
-}
-.dish__choice:hover .dish__btn {
-  right: 0;
-}
-.dish__choice:hover .dish__price {
   margin-right: 60px;
   transition-duration: 500ms;
 }
@@ -123,8 +124,8 @@ main {
 }
 .dish__price {
   position: absolute;
-  right: 20px;
-  bottom: 20px;
+  right: 90px;
+  bottom: 23px;
 }
 .dish__button {
   display: flex;
