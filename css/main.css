@@ -98,7 +98,7 @@ a {
   gap: 25px;
   font-weight: 700;
 }
-.steps__list:hover > i {
+.steps__list:hover i {
   color: #9356dc;
 }
 .steps__number {

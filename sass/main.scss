@@ -132,7 +132,7 @@ a {
     gap: 25px;
     font-weight: 700;
 
-    &:hover > i {
+    &:hover i {
       color: $primary-color;
     }
   }
