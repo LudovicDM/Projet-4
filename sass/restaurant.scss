@@ -169,6 +169,7 @@ main {
     flex-direction: column;
     gap: 12px;
     align-items: center;
+    
   }
 
   &__choice {
@@ -208,12 +209,17 @@ main {
   &__name {
     font-weight: bold;
     font-size: 18px;
+    
   }
 
   &__detail {
     font-weight: 300;
     font-size: 15px;
     width: 100%;
+    transition-duration: 500ms;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
   }
 
   &__price {

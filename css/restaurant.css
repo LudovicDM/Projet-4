@@ -149,6 +149,10 @@ main {
   font-weight: 300;
   font-size: 15px;
   width: 100%;
+  transition-duration: 500ms;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 .dish__price {
   position: absolute;
