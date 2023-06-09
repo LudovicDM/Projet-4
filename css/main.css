@@ -252,6 +252,7 @@ a {
   margin-top: 395px;
   font-family: "Shrikhand", cursive;
   font-size: 20px;
+  animation: loader 1250ms;
 }
 
 @keyframes loader-background {
