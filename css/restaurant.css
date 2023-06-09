@@ -127,9 +127,20 @@ main {
   cursor: pointer;
   margin-right: 60px;
   transition-duration: 500ms;
+}
+.dish__animtext {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  width: 100%;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
+  transition-duration: 500ms;
+}
+.dish__animtext:hover {
+  width: 70%;
+  transition-duration: 500ms;
 }
 .dish__check {
   border: 0;
@@ -144,11 +155,17 @@ main {
 .dish__name {
   font-weight: bold;
   font-size: 18px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  transition-duration: 500ms;
 }
 .dish__detail {
   font-weight: 300;
   font-size: 15px;
-  width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
   transition-duration: 500ms;
 }
 .dish__price {

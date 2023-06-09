@@ -15,6 +15,13 @@ $light-black: #353535;
 
 //**************MIXIN**************//
 
+@mixin animation-text-dish {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  transition-duration: 500ms;
+}
+
 @mixin flexcenter {
   display: flex;
   justify-content: center;
@@ -169,7 +176,6 @@ main {
     flex-direction: column;
     gap: 12px;
     align-items: center;
-    
   }
 
   &__choice {
@@ -189,9 +195,19 @@ main {
       cursor: pointer;
       margin-right: 60px;
       transition-duration: 500ms;
-      white-space: nowrap;
-      overflow: hidden;
-      text-overflow: ellipsis;
+    }
+  }
+
+  &__animtext {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    width: 100%;
+    @include animation-text-dish;
+
+    &:hover {
+      width: 70%;
+      transition-duration: 500ms;
     }
   }
 
@@ -209,15 +225,13 @@ main {
   &__name {
     font-weight: bold;
     font-size: 18px;
-    
+    @include animation-text-dish;
   }
 
   &__detail {
     font-weight: 300;
     font-size: 15px;
-    width: 100%;
-    transition-duration: 500ms;
-
+    @include animation-text-dish;
   }
 
   &__price {
