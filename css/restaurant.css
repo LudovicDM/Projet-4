@@ -68,15 +68,30 @@ main {
   gap: 12px;
   position: relative;
 }
-.dish__check {
-  border: 0;
-  position: absolute;
-  top: 0px;
-  right: -65px;
-  background-color: #99e2d0;
-  height: 100%;
-  width: 65px;
-  transition-duration: 500ms;
+.dish__animation {
+  animation-name: appear;
+  animation-duration: 1000ms;
+  animation-fill-mode: backwards;
+  animation-delay: 250ms;
+}
+@keyframes appear {
+  from {
+    transform: translateY(-100px);
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.dish__enter {
+  animation-delay: 0.25s;
+}
+.dish__plat {
+  animation-delay: 0.5s;
+}
+.dish__dessert {
+  animation-delay: 0.75s;
 }
 .dish__line {
   border: 2px solid #99e2d0;
@@ -100,7 +115,7 @@ main {
   padding: 10px 10px 15px 15px;
   display: flex;
   flex-direction: column;
-  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
+  box-shadow: 0px 1px 10px #000000;
   border-radius: 20px;
   height: 43px;
   width: 86%;
@@ -112,6 +127,16 @@ main {
 .dish__choice:hover div {
   cursor: pointer;
   margin-right: 60px;
+  transition-duration: 500ms;
+}
+.dish__check {
+  border: 0;
+  position: absolute;
+  top: 0px;
+  right: -65px;
+  background-color: #99e2d0;
+  height: 100%;
+  width: 65px;
   transition-duration: 500ms;
 }
 .dish__name {

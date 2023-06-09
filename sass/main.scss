@@ -154,16 +154,6 @@ a {
   }
 }
 
-//****************ANIMATION card************//
-//
-//
-//   animation-name: appear;
-//   animation-duration: 1000ms;
-//   animation-fill-mode: backwards;
-//
-
-//   animation-delay: 250ms;
-// }
 
 // //*************RESTAURANT************//
 
@@ -303,6 +293,8 @@ a {
   animation-fill-mode: forwards;
   z-index: 1;
   animation-delay: 1100ms;
+
+  
   &__logo {
     border: 10px $primary-color solid;
     border-top: 10px solid $secondary-color;
@@ -317,6 +309,7 @@ a {
     left: 0;
     bottom: 0;
     animation: loader 1250ms;
+
   }
 }
 
