@@ -202,11 +202,11 @@ main {
     display: flex;
     flex-direction: column;
     gap: 5px;
-    width: 100%;
+    width: 80%;
     @include animation-text-dish;
 
     &:hover {
-      width: 70%;
+      width: 60%;
       transition-duration: 500ms;
     }
   }
@@ -219,7 +219,6 @@ main {
     background-color: $tertiary-color;
     height: 100%;
     width: 65px;
-    transition-duration: 500ms;
   }
 
   &__name {

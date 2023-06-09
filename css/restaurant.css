@@ -132,14 +132,14 @@ main {
   display: flex;
   flex-direction: column;
   gap: 5px;
-  width: 100%;
+  width: 80%;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
   transition-duration: 500ms;
 }
 .dish__animtext:hover {
-  width: 70%;
+  width: 60%;
   transition-duration: 500ms;
 }
 .dish__check {
@@ -150,7 +150,6 @@ main {
   background-color: #99e2d0;
   height: 100%;
   width: 65px;
-  transition-duration: 500ms;
 }
 .dish__name {
   font-weight: bold;
