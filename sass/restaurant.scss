@@ -96,10 +96,7 @@ img {
 
 main {
   background-color: $middle-grey;
-
 }
-
-
 
 .menu {
   background: $middle-grey;
@@ -107,7 +104,6 @@ main {
   height: 1110px;
   position: relative;
   top: -45px;
- 
 
   &__title {
     font-family: "Shrikhand", cursive;
@@ -131,19 +127,16 @@ main {
     animation-fill-mode: backwards;
   }
 
-  @keyframes appear 
-{
-  from 
-  {
-    transform: translateY(-100px);
-    opacity: 0;
+  @keyframes appear {
+    from {
+      transform: translateY(-100px);
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
   }
-  to 
-  {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
 
   &__enter {
     animation-delay: 250ms;
@@ -156,8 +149,6 @@ main {
   &__dessert {
     animation-delay: 750ms;
   }
-
-  
 
   &__line {
     border: 2px solid #99e2d0;
@@ -178,8 +169,6 @@ main {
     flex-direction: column;
     gap: 12px;
     align-items: center;
-    
-    
   }
 
   &__choice {
@@ -194,7 +183,6 @@ main {
     gap: 5px;
     font-weight: 700;
     overflow: hidden;
-    
 
     &:hover div {
       cursor: pointer;
@@ -203,10 +191,8 @@ main {
       white-space: nowrap;
       overflow: hidden;
       text-overflow: ellipsis;
+    }
   }
-}
-
-
 
   &__check {
     border: 0;
@@ -222,24 +208,18 @@ main {
   &__name {
     font-weight: bold;
     font-size: 18px;
-
-
   }
-
 
   &__detail {
     font-weight: 300;
     font-size: 15px;
     width: 100%;
-
-
   }
 
   &__price {
     position: absolute;
     right: 83px;
     bottom: 13px;
-  
   }
 
   &__button {
@@ -285,6 +265,3 @@ main {
     height: 13px;
   }
 }
-
-
-
