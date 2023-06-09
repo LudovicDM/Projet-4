@@ -129,7 +129,6 @@ main {
     animation-name: appear;
     animation-duration: 1000ms;
     animation-fill-mode: backwards;
-    animation-delay: 250ms;
   }
 
   @keyframes appear 
@@ -226,8 +225,8 @@ main {
 
   &__price {
     position: absolute;
-    right: 90px;
-    bottom: 23px;
+    right: 83px;
+    bottom: 13px;
   
   }
 
