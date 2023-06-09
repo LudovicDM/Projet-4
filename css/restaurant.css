@@ -85,13 +85,13 @@ main {
   }
 }
 .dish__enter {
-  animation-delay: 0.25s;
+  animation-delay: 250ms;
 }
 .dish__plat {
-  animation-delay: 0.5s;
+  animation-delay: 500ms;
 }
 .dish__dessert {
-  animation-delay: 0.75s;
+  animation-delay: 750ms;
 }
 .dish__line {
   border: 2px solid #99e2d0;
