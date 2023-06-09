@@ -127,6 +127,9 @@ main {
   cursor: pointer;
   margin-right: 60px;
   transition-duration: 500ms;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 .dish__check {
   border: 0;
@@ -145,6 +148,7 @@ main {
 .dish__detail {
   font-weight: 300;
   font-size: 15px;
+  width: 100%;
 }
 .dish__price {
   position: absolute;
