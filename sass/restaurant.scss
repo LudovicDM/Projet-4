@@ -142,7 +142,7 @@ main {
   @include desktop {
     background-color: $white;
     display: flex;
-    justify-self: center;
+    justify-content: center;
   }
 }
 
