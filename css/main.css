@@ -6,6 +6,16 @@
   -o-object-fit: cover;
      object-fit: cover;
 }
+@media screen and (min-width: 768px) {
+  * {
+    max-width: 1024px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  * {
+    max-width: 1920px;
+  }
+}
 
 a {
   color: inherit;
@@ -21,10 +31,20 @@ a {
   height: 63px;
   position: relative;
 }
+@media screen and (min-width: 1024px) {
+  .header {
+    height: 96px;
+  }
+}
 .header__title {
   font-family: "Shrikhand", cursive;
   font-weight: 400;
   font-size: 30px;
+}
+@media screen and (min-width: 1024px) {
+  .header__title {
+    font-size: 40px;
+  }
 }
 
 .intro {
@@ -47,9 +67,19 @@ a {
 .intro__title {
   padding-top: 39.5px;
 }
+@media screen and (min-width: 1024px) {
+  .intro__title {
+    font-size: 40px;
+  }
+}
 .intro__text {
   padding-top: 15px;
   font-size: 18px;
+}
+@media screen and (min-width: 1024px) {
+  .intro__text {
+    padding-top: 25px;
+  }
 }
 .intro__button {
   width: 218px;
@@ -69,14 +99,41 @@ a {
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
   background: linear-gradient(360deg, #9356dc 0%, #ff79da 50%);
 }
+@media screen and (min-width: 1024px) {
+  .intro__button {
+    margin-bottom: 30px;
+    margin-top: 30px;
+  }
+}
 
 .steps {
   display: flex;
   flex-direction: column;
   height: 440px;
 }
+@media screen and (min-width: 768px) {
+  .steps {
+    height: 400px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .steps {
+    height: 180px;
+    align-items: flex-start;
+    margin-left: 180px;
+    padding-bottom: 40px;
+    padding-top: 40px;
+  }
+}
 .steps__title {
   margin: 48px 80px 26px 20px;
+}
+@media screen and (min-width: 768px) {
+  .steps__title {
+    margin: 10px 0px 10px 0px;
+    text-align: center;
+    padding: 10px 20px 0px 10px;
+  }
 }
 .steps__choice {
   display: flex;
@@ -84,6 +141,13 @@ a {
   align-items: center;
   justify-content: space-between;
   height: 290px;
+}
+@media screen and (min-width: 1024px) {
+  .steps__choice {
+    flex-direction: row;
+    gap: 35px;
+    width: 88%;
+  }
 }
 .steps__list {
   display: flex;
@@ -97,6 +161,19 @@ a {
   position: relative;
   gap: 25px;
   font-weight: 700;
+}
+@media screen and (min-width: 768px) {
+  .steps__list {
+    width: 70%;
+    margin-top: 20px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .steps__list {
+    justify-content: flex-start;
+    padding-left: 35px;
+    width: 50%;
+  }
 }
 .steps__list:hover i {
   color: #9356dc;
@@ -119,6 +196,20 @@ a {
   padding: 15px;
   padding-top: 54px;
 }
+@media screen and (min-width: 768px) {
+  .restaurant {
+    padding-top: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .restaurant {
+    align-items: flex-start;
+    padding-left: 180px;
+  }
+}
 .restaurant__cards {
   border-radius: 15px;
   width: 100%;
@@ -126,6 +217,25 @@ a {
   flex-direction: column;
   gap: 18px;
   margin-bottom: 60px;
+}
+@media screen and (min-width: 768px) {
+  .restaurant__cards {
+    width: 73%;
+    margin-bottom: 30px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .restaurant__cards {
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    row-gap: 50px;
+    -moz-column-gap: 95px;
+         column-gap: 95px;
+  }
+  .restaurant__cards a {
+    width: 40%;
+  }
 }
 .restaurant__card {
   position: relative;
@@ -142,6 +252,18 @@ a {
 .restaurant__title {
   margin-bottom: 20px;
   font-weight: 700;
+}
+@media screen and (min-width: 768px) {
+  .restaurant__title {
+    display: flex;
+    justify-content: center;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .restaurant__title {
+    margin-top: 15px;
+    margin-bottom: 28px;
+  }
 }
 .restaurant__name {
   padding-top: 10px;
@@ -197,16 +319,58 @@ a {
   padding-top: 22px;
   padding-bottom: 22px;
 }
+@media screen and (min-width: 768px) {
+  .foot {
+    padding-left: 0px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .foot {
+    display: flex;
+    height: 79px;
+    align-items: flex-end;
+    justify-content: center;
+  }
+}
 .foot__title {
   font-family: "Shrikhand", cursive;
   font-size: 18px;
   font-weight: 400;
   padding-bottom: 16px;
 }
+@media screen and (min-width: 768px) {
+  .foot__title {
+    display: flex;
+    justify-content: center;
+    font-size: 35px;
+    padding-bottom: 15px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .foot__title {
+    font-size: 18px;
+    padding: 0;
+    position: absolute;
+    right: 80px;
+  }
+}
 .foot__list {
   display: flex;
   flex-direction: column;
   gap: 7px;
+}
+@media screen and (min-width: 768px) {
+  .foot__list {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .foot__list {
+    gap: 37px;
+    right: 225px;
+    position: absolute;
+  }
 }
 .foot__link {
   list-style-type: none;
@@ -246,15 +410,6 @@ a {
   bottom: 0;
   animation: loader 1250ms;
 }
-.loader__name {
-  display: flex;
-  justify-content: center;
-  margin-top: 395px;
-  font-family: "Shrikhand", cursive;
-  font-size: 20px;
-  animation: loader 1250ms;
-}
-
 @keyframes loader-background {
   0% {
     opacity: 1;
