@@ -162,7 +162,8 @@ main {
   }
   
   &__fulltitle {
-  
+   
+
     @include desktop {
     display: flex;
     justify-content: center;
@@ -177,10 +178,10 @@ main {
     right: 38px;
     font-size: 25px;
 
-    @include desktop {
-      position: relative;
-      right: -20px;
-    }
+    // @include desktop {
+    //   position: relative;
+    //   right: -20px;
+    // }
   }
 
   &__heartfull {
@@ -205,10 +206,10 @@ main {
       opacity: 1;
     }
 
-    @include desktop {
-      position: relative;
-      right: 5px;
-    }
+    // @include desktop {
+    //   position: relative;
+    //   right: 5px;
+    // }
   }
 
   &__title {
