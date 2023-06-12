@@ -94,6 +94,46 @@ main {
     top: 0;
   }
 }
+@media screen and (min-width: 1024px) {
+  .menu__fulltitle {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+}
+.menu__heartempty {
+  position: absolute;
+  top: 48px;
+  right: 38px;
+  font-size: 25px;
+}
+@media screen and (min-width: 1024px) {
+  .menu__heartempty {
+    position: relative;
+    right: -20px;
+  }
+}
+.menu__heartfull {
+  position: absolute;
+  top: 48px;
+  right: 38px;
+  font-size: 25px;
+  opacity: 0;
+  transition-property: all;
+  transition-duration: 350ms;
+  background: -webkit-gradient(linear, left top, left bottom, from(#9356dc), to(#ff79da));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.menu__heartfull:hover {
+  opacity: 1;
+}
+@media screen and (min-width: 1024px) {
+  .menu__heartfull {
+    position: relative;
+    right: 5px;
+  }
+}
 .menu__title {
   font-family: "Shrikhand", cursive;
   font-size: 28px;
