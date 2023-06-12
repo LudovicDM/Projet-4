@@ -178,6 +178,7 @@ main {
   flex-direction: column;
   gap: 12px;
   align-items: center;
+  transition-duration: 500ms;
 }
 @media screen and (min-width: 1024px) {
   .dish__list {
@@ -201,7 +202,7 @@ main {
 .dish__choice:hover div {
   cursor: pointer;
   margin-right: 60px;
-  transition-duration: 500ms;
+  transition: all 500ms;
 }
 .dish__animtext {
   display: flex;
@@ -225,6 +226,7 @@ main {
   background-color: #99e2d0;
   height: 100%;
   width: 65px;
+  transition-duration: 600ms;
 }
 .dish__name {
   font-weight: bold;

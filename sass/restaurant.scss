@@ -250,6 +250,7 @@ main {
     flex-direction: column;
     gap: 12px;
     align-items: center;
+    transition-duration: 500ms;
 
     @include desktop {
       width: 65%;
@@ -274,7 +275,7 @@ main {
     &:hover div {
       cursor: pointer;
       margin-right: 60px;
-      transition-duration: 500ms;
+      transition: all 500ms;
 
     }
   }
@@ -300,6 +301,7 @@ main {
     background-color: $tertiary-color;
     height: 100%;
     width: 65px;
+    transition-duration: 600ms;
   }
 
   &__name {
