@@ -3,7 +3,8 @@
   font-family: "Roboto", sans-serif;
   margin: 0;
   padding: 0;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 @media screen and (min-width: 768px) {
   * {
@@ -229,7 +230,8 @@ a {
     flex-wrap: wrap;
     width: 100%;
     row-gap: 50px;
-    column-gap: 95px;
+    -moz-column-gap: 95px;
+         column-gap: 95px;
   }
   .restaurant__cards a {
     width: 40%;
@@ -427,5 +429,3 @@ a {
     opacity: 1;
   }
 }
-
-/*# sourceMappingURL=main.css.map */
