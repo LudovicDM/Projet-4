@@ -101,19 +101,12 @@ img {
 @media screen and (min-width: 1024px) {
   .header {
     box-shadow: none;
-    top: 17px;
   }
 }
 .header__title {
   font-family: "Shrikhand", cursive;
   font-weight: 400;
   font-size: 30px;
-}
-@media screen and (min-width: 1024px) {
-  .header__title {
-    position: relative;
-    bottom: 17px;
-  }
 }
 .header__icon {
   position: absolute;
