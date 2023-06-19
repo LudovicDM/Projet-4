@@ -109,6 +109,12 @@ img {
   font-weight: 400;
   font-size: 30px;
 }
+@media screen and (min-width: 1024px) {
+  .header__title {
+    position: relative;
+    bottom: 17px;
+  }
+}
 .header__icon {
   position: absolute;
   left: 23px;
@@ -388,6 +394,11 @@ img {
   border-radius: 15px 15px 0px 0px;
   height: 174px;
 }
+@media screen and (min-width: 1024px) {
+  .restaurant__card img {
+    top: 0px;
+  }
+}
 .restaurant__title {
   margin-bottom: 20px;
   font-weight: 700;
@@ -451,11 +462,11 @@ img {
   right: 15px;
 }
 
-main {
+.main {
   background-color: #f6f6f6;
 }
 @media screen and (min-width: 1024px) {
-  main {
+  .main {
     background-color: #ffffff;
     display: flex;
     justify-content: center;
