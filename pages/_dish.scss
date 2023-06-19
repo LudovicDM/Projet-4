@@ -1,0 +1,154 @@
+.dish {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    position: relative;
+  
+    &__animation {
+      animation-name: appear;
+      animation-duration: 1000ms;
+      animation-fill-mode: backwards;
+    }
+  
+    @keyframes appear {
+      from {
+        transform: translateY(-100px);
+        opacity: 0;
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+  
+    &__enter {
+      animation-delay: 250ms;
+    }
+  
+    &__plat {
+      animation-delay: 500ms;
+    }
+  
+    &__dessert {
+      animation-delay: 750ms;
+    }
+  
+    &__line {
+      border: 2px solid #99e2d0;
+      width: 40px;
+      margin-left: 13px;
+  
+      @include tablet {
+        width: 95%;
+      }
+  
+      @include desktop {
+        width: 40px;
+        margin-left: 177px;
+      }
+    }
+  
+    &__title {
+      font-size: 16px;
+      font-weight: 300;
+      padding-top: 40px;
+      padding-left: 13px;
+  
+      @include tablet {
+        display: flex;
+        justify-content: center;
+      }
+  
+      @include desktop {
+        justify-content: flex-start;
+        padding-left: 177px;
+      }
+    }
+  
+    &__list {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      align-items: center;
+      transition-duration: 500ms;
+  
+      @include desktop {
+        width: 65%;
+        padding-left: 150px;
+      }
+    }
+  
+    &__choice {
+      padding: 10px 10px 15px 15px;
+      display: flex;
+      flex-direction: column;
+      box-shadow: 0px 4.01149px 15.0431px rgba(0, 0, 0, 0.1);
+      border-radius: 20px;
+      height: 43px;
+      width: 86%;
+      position: relative;
+      gap: 5px;
+      font-weight: 700;
+      overflow: hidden;
+      
+  
+      &:hover div {
+        cursor: pointer;
+        margin-right: 60px;
+        transition: all 500ms;
+  
+      }
+    }
+  
+    &__animtext {
+      display: flex;
+      flex-direction: column;
+      gap: 5px;
+      width: 80%;
+      @include animation-text-dish;
+  
+      &:hover {
+        width: 60%;
+        transition-duration: 500ms;
+      }
+    }
+  
+    &__check {
+      border: 0;
+      position: absolute;
+      top: 0px;
+      right: -65px;
+      background-color: $tertiary-color;
+      height: 100%;
+      width: 65px;
+      transition-duration: 600ms;
+    }
+  
+    &__name {
+      font-weight: bold;
+      font-size: 18px;
+      @include animation-text-dish;
+    }
+  
+    &__detail {
+      font-weight: 300;
+      font-size: 15px;
+      @include animation-text-dish;
+    }
+  
+    &__price {
+      position: absolute;
+      right: 83px;
+      bottom: 13px;
+    }
+  
+    &__button {
+      @include flexcenter;
+      margin-top: 40px;
+    }
+  
+    &__command {
+      @include button-gradiant;
+    }
+  }
