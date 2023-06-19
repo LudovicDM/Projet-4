@@ -1,80 +1,75 @@
 main {
-    background-color: $middle-grey;
-  
-    @include desktop {
-      background-color: $white;
-      display: flex;
-      justify-content: center;
-    }
+  background-color: $middle-grey;
+
+  @include desktop {
+    background-color: $white;
+    display: flex;
+    justify-content: center;
   }
-  
-  .menu {
-    background: $middle-grey;
-    border-radius: 40px 40px 0px 0px;
-    height: 1150px;
-    position: relative;
-    top: -45px;
-  
+}
+
+.menu {
+  background: $middle-grey;
+  border-radius: 40px 40px 0px 0px;
+  height: 1150px;
+  position: relative;
+  top: -45px;
+
+  @include desktop {
+    width: 72%;
+    display: flex;
+    flex-direction: column;
+    top: 0;
+  }
+
+  &__fulltitle {
     @include desktop {
-      width: 72%;
-      display: flex;
-      flex-direction: column;
-      top: 0;
-    }
-    
-    &__fulltitle {
-     
-  
-      @include desktop {
       display: flex;
       justify-content: center;
       width: 100%;
-      
-      }
-    }
-  
-    &__heartempty {
-      position: absolute;
-      top: 48px;
-      right: 38px;
-      font-size: 25px;
-  
-    }
-  
-    &__heartfull {
-      position: absolute;
-      top: 48px;
-      right: 38px;
-      font-size: 25px;
-      opacity: 0;
-      transition-property: all;
-      transition-duration: 350ms;
-      background: -webkit-gradient(
-        linear,
-        left top,
-        left bottom,
-        from($primary-color),
-        to($secondary-color)
-      );
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-  
-      &:hover {
-        opacity: 1;
-      }
-  
-    }
-  
-    &__title {
-      font-family: "Shrikhand", cursive;
-      font-size: 28px;
-      font-weight: 400;
-      padding-left: 17px;
-      padding-top: 40px;
-  
-      @include tablet {
-        display: flex;
-        justify-content: center;
-      }
     }
   }
+
+  &__heartempty {
+    position: absolute;
+    top: 48px;
+    right: 38px;
+    font-size: 25px;
+  }
+
+  &__heartfull {
+    position: absolute;
+    top: 48px;
+    right: 38px;
+    font-size: 25px;
+    opacity: 0;
+    transition-property: all;
+    transition-duration: 350ms;
+    background: -webkit-gradient(
+      linear,
+      left top,
+      left bottom,
+      from($primary-color),
+      to($secondary-color)
+    );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+    &:hover {
+      opacity: 1;
+    }
+  }
+
+  &__title {
+    font-family: "Shrikhand", cursive;
+    font-size: 28px;
+    font-weight: 400;
+    padding-left: 17px;
+    padding-top: 40px;
+
+    @include tablet {
+      display: flex;
+      justify-content: center;
+    }
+  }
+}
